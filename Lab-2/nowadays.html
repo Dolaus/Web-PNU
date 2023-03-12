@@ -3,10 +3,35 @@
     <head>
         <meta charset="utf-8">
         <title>Сьогодення</title>
+        <style>
+          h1:nth-child(1){
+            text-align: center;
+            font-size: 22px;
+          }
+          #backbutton{
+            font-style: italic;
+          }
+          h2{
+            text-align: center;
+          }
+          ul>li:nth-child(odd){
+            background-color: grey;
+            color:  white;
+          }
+          ul>li:nth-child(even){
+            background-color: white;
+          }
+          .Cursor{
+            cursor: pointer;  
+          }
+          #element4:hover{
+            background-color: rgb(70, 211, 70);
+          }
+        </style>
     </head>
     <body>
         <h1>Сьогодення Стельмащука Петра Руслановича</h1>
-        <a href="index.html">Назад на головну</a>
+        <a id="backbutton" href="index.html">Назад на головну</a>
 
         <h2>Мій типовий список покупок</h2>
         <ul>
@@ -44,14 +69,14 @@
 
         <h2>Мій улюблений десерт Спартак</h2>
         <h4>Інгредієнти</h4>
-        <ul>
+        <ol>
           <li>Для Коржів:
             <ol>
                 <li>Пшеничне борошно 400г</li>
                 <li>Какао-порошок 4стол.</li>
-                <li>Цукор 150г</li>
-                <li>Вершкове масло 100г</li>
-                <li>Яйця 2шт</li>
+                <li class="Cursor">Цукор 150г</li>
+                <li id="element4">Вершкове масло 100г</li>
+                <li class="Cursor">Яйця 2шт</li>
                 <li>Мед 2 чайн</li>
                 <li>Сода харчова 1 чайн</li>
                 <li>Розпушувач 1 чайн</li>
@@ -75,10 +100,8 @@
               <li>Вершкове масло- 1 ст.л.</li>
             </ol>
           </li>
-        </ul>
-        <h4>Покроковий рецепт приготування</h4>
+        </ol>
 
-        <h2>Мій улюблений десерт</h2>
         <ol>
           <li>Приготувати тісто:
             <ol>
