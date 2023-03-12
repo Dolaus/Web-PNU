@@ -5,26 +5,86 @@
     <head>
         <meta charset="utf-8">
         <title>Моя автобіографія</title>
-        
+        <style>
+            h1{
+                text-align: center;
+                font-size: 22px;
+            }
+            #backbut{
+                font-style: italic;
+            }
+            #content{
+                text-align: center;
+            }
+            section>a{
+                border: 2px solid blue;
+                background-color: blue;
+                color: white;
+                display: block;
+                width: 100px;
+                margin-bottom: 3px;
+            }
+            section>a:hover{
+                background-color: magenta;
+            }
+            section>a:active{
+                background-color: yellow;
+            }
+            article{
+                font-size: 120%;
+            }
+            div{
+                font-size: 120%;
+            }
+            #text1{
+                color:red;
+                background-color: wheat;
+            }
+            #text2{
+                color:rgb(53, 150, 61);
+                background-color: rgb(214, 205, 189);
+            }
+            #text3{
+                color:rgb(23, 177, 151);
+                background-color: rgb(204, 190, 164);
+            }
+            #text4{
+                color:rgb(204, 0, 255);
+                background-color: rgb(109, 235, 186);
+            }
+            #text5{
+                color:rgb(27, 77, 170);
+                background-color: rgb(223, 153, 24);
+            }
+            .cont{
+                font-style: italic;
+                font-weight: bold;
+            }
+            #TopU{
+                text-transform: uppercase;
+            }
+        </style>
     </head>
     <body>
 
         <h1 id="bio">Автобіографія Стельмащука Петра Руслановича</h1>
-        <a href="index.html">Назад на головну</a>
+        <a id="backbut" href="index.html">Назад на головну</a>
 
 
         <h3 id="content">Зміст</h3>
+        
+        <section>
         <a href="#baseinfo">Базова інформація</a><br>
         <a href="#chilchood">Дитинство</a><br>
         <a href="#schoolyear">Шкільні роки</a><br>
         <a href="#behindschool">Поза школою</a><br>
         <a href="#univesyti">Університет</a><br>
+        </section>
 
-
-
+        
         <article>
-            <h2 id="baseinfo">Базова інформація</h2>
-            <p>
+            <div><h2 id="baseinfo">Базова інформація</h2></div>
+            <p id="text1">
             Народився в селі Остапківці, Коломийського району Івано-Франківської області.
             З 2009 року навчався у Гвіздецькому ліцеї, також у 2012 році навчався у школі мистецтв яку успішно закінчив
             у 2018, після закінчення я вступив до Прикарпатського
@@ -35,10 +95,10 @@
             </p>
             
         </article>
-        <a href="#content">До змісту</a>
+        <a class="cont" href="#content">До змісту</a>
         <article >
-            <h2 id="chilchood">Дитинство</h2>
-            <p>
+         <div> <h2 id="chilchood">Дитинство</h2></div>
+            <p id="text2">
                 Якщо згадати своє дитинство, то воно було повним вражень і пригод.
                 Я зростав в маленькому селі, де було дуже тихо та спокійно, і
                 кожен день я проводив біля річки, де ми з друзями рибалкували і купалися.
@@ -52,10 +112,10 @@
             </p>
             
         </article>
-        <a href="#content">До змісту</a>
+        <a class="cont" href="#content">До змісту</a>
         <article >
-            <h2 id="schoolyear">Шкільні роки</h2>
-            <p>
+        <div> <h2 id="schoolyear">Шкільні роки</h2></div>
+            <p id="text3">
                 Мої шкільні роки були дуже важливими і незабутніми в моєму житті. Я починав навчання у першому класі з
                 великим бажанням дізнаватися нове, відкривати світ і знайомитися зі своїми однолітками.
                 Школа була місцем, де я знайшов своїх друзів, з якими проводив багато часу.
@@ -70,10 +130,10 @@
             </p>
            
         </article>
-        <a href="#content">До змісту</a>
+        <a  class="cont" href="#content">До змісту</a>
         <article >
-            <h2 id="behindschool">Поза школою</h2>
-            <p>
+        <div><h2 id="behindschool">Поза школою</h2></div>
+            <p id="text4">
                 Поза школою я займався різними цікавими справами, які допомагали мені розвивати свої таланти та навички,
                 а також знаходити нових друзів.
                 Один з моїх улюблених захоплень - це спорт. Я грав у футбол, баскетбол та інші командні види спорту. 
@@ -86,10 +146,10 @@
             </p>
            
         </article>
-        <a href="#content">До змісту</a>
+        <a class="cont" href="#content">До змісту</a>
         <article>
-            <h2  id="univesyti">Університет</h2>
-            <p>
+        <div><h2  id="univesyti">Університет</h2></div>
+            <p id="text5">
                 Університетські роки, які я проводив на дистанційному навчанні, були досить складними, 
                 але в той же час цікавими та незабутніми.
              COVID-19 змусив всіх нас переглянути наші плани та змінити спосіб навчання.
@@ -106,8 +166,9 @@
             </p>
             
         </article>
-        <a href="#content">До змісту</a>
+  
+        <a class="cont" href="#content">До змісту</a>
         <hr>
-        <a href="#bio">Уверх</a>
+        <a id="TopU" href="#bio">Уверх</a>
     </body>
 </html>
