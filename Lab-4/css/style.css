@@ -5,6 +5,7 @@
 }
 .row{
     width: 90%;
+    display: flex;
 }
 
 h1{
@@ -43,7 +44,7 @@ p{
     .col-tb-7,.col-tb-8,.col-tb-9,
     .col-tb-10,.col-tb-11,.col-tb-12{
         float:  left;
-        
+        display: flex;
         background-color: #D5E8D4;
         border: 2px solid black;
     }
@@ -90,7 +91,8 @@ p{
     .col-ds-4,.col-ds-5,.col-ds-6,
     .col-ds-7,.col-ds-8,.col-ds-9,
     .col-ds-10,.col-ds-11,.col-ds-12{
-        float:  left;
+        
+        flex-direction: column;
         background-color: #D5E8D4;
         border: 2px solid black;
     }
