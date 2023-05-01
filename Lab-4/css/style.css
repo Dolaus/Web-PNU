@@ -4,8 +4,9 @@
     padding: 0;
 }
 .row{
-    width: 90%;
     display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
 }
 
 h1{
@@ -21,32 +22,31 @@ h2{
     text-align: center;
 }
 
-div:nth-of-type(1)>h2{
+#title1{
     background-color: #F0A30A;
 }
-div:nth-of-type(2)>h2{
+#title2{
     background-color: #d80073;
     color: white;
 }
-div:nth-of-type(3)>h2{
+#title3{
     background-color: #fad9d5;
 }
 p{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
+    
 }
-
+.content{
+    background-color: #D5E8D4;
+    border: 2px solid black;
+}
 
 @media (min-width: 768px) and (max-width: 992px){
     .col-tb-1,.col-tb-2,.col-tb-3,
     .col-tb-4,.col-tb-5,.col-tb-6,
     .col-tb-7,.col-tb-8,.col-tb-9,
     .col-tb-10,.col-tb-11,.col-tb-12{
-        float:  left;
-        display: flex;
-        background-color: #D5E8D4;
-        border: 2px solid black;
+        padding: 2%;
     }
     .col-tb-1 {
         width: 8.33%;
@@ -64,7 +64,7 @@ p{
         width: 41.66%;
         }
         .col-tb-6 {
-        margin-left: 1px;
+
         width: 50%;
         }
         .col-tb-7 {
@@ -91,10 +91,8 @@ p{
     .col-ds-4,.col-ds-5,.col-ds-6,
     .col-ds-7,.col-ds-8,.col-ds-9,
     .col-ds-10,.col-ds-11,.col-ds-12{
+        padding: 2%;
         
-        flex-direction: column;
-        background-color: #D5E8D4;
-        border: 2px solid black;
     }
     .col-ds-1 {
         width: 8.33%;
@@ -138,10 +136,8 @@ p{
     .col-mb-4,.col-mb-5,.col-mb-6,
     .col-mb-7,.col-mb-8,.col-mb-9,
     .col-mb-10,.col-mb-11,.col-mb-12{
-        float:  left;
-        background-color: #D5E8D4;
-        border: 2px solid black;
        
+        padding: 2%;
     }
     .col-mb-1 {
         width: 8.33%;

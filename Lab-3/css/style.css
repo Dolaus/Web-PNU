@@ -16,12 +16,20 @@ h2{
     border-bottom: 2px solid black;
     border-left: 2px solid black;
     width: 150px;
-    margin-top: 0px;
-    margin-left: auto;
+    float: right;
     text-align: center;
 }
-
-div:nth-of-type(1)>h2{
+#title1{
+    background-color: #F0A30A;
+}
+#title2{
+    background-color: #d80073;
+    color: white;
+}
+#title3{
+    background-color: #fad9d5;
+}
+/* div:nth-of-type(1)>h2{
     background-color: #F0A30A;
 }
 div:nth-of-type(2)>h2{
@@ -30,7 +38,7 @@ div:nth-of-type(2)>h2{
 }
 div:nth-of-type(3)>h2{
     background-color: #fad9d5;
-}
+} */
 p{
     padding: 12px;
     height: 160px;
