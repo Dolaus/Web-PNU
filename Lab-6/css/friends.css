@@ -1,0 +1,29 @@
+
+h1{
+  text-align: center;
+  font-size: 22px;
+}
+#back{
+  font-style: italic;
+}
+h2{
+  text-align: center;
+}
+th{
+  text-align: center;
+  background-color: green;
+  color: white;
+  font-weight: 600;
+}
+tr:nth-child(even){
+  background-color: gray;
+  color:  white;
+}
+table{
+  
+  border: 3px solid gray;
+  padding: 5px;
+}
+td:last-child{
+  text-align: right;
+}

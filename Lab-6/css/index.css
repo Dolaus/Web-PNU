@@ -1,0 +1,36 @@
+
+section{
+    flex-direction: row ;
+    justify-content: space-around;
+}
+h1{
+    font-size: 24px;
+    text-align: center;
+}
+p{
+    font-size: 120%;
+}
+p:nth-child(1)>a:link{
+    color: rgb(69, 82, 143);
+}
+p:nth-child(1)>a:visited{
+    color: rgb(14, 80, 14);
+}
+p:nth-child(2)>a:link{
+    color: rgb(8, 68, 68);
+}
+p:nth-child(2)>a:visited{
+    color: green;
+}
+p:nth-child(3)>a:link{
+    color: rgb(95, 10, 84);
+}
+p:nth-child(3)>a:visited{
+    color: rgb(94, 107, 18);
+}
+p:nth-child(4)>a:link{
+    color: rgb(61, 66, 14);
+}
+p:nth-child(4)>a:visited{
+    color: rgb(57, 27, 114);
+}
