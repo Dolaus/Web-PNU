@@ -24,11 +24,12 @@ function printTable() {
 
 
 function triangle(value1, type1, value2, type2) {
+    const radPi=Math.PI/180;
     if (!value1 || !value2 || !type1 || !type2) {
         console.log("failed");
         console.log("pls input parametrs");
         return;
-    } else if (value1 < 1 || value2 < 1 ) {
+    } else if (value1 <= 0 || value2 <= 0 ) {
         console.log("failed");
         console.log("Zero or negative input");
         return;
@@ -38,8 +39,8 @@ function triangle(value1, type1, value2, type2) {
 
         if (value1 + value2 > C && value1 + C > value2 && value2 + C > value1) {
             console.log("a = " + value2 + "\n" + "b = " + value2 + "\n" + "c = " + C);
-            let alpha = Math.atan(value1 / value2) / (Math.PI/180);
-            let beta = Math.atan(value2 / value1) / (Math.PI/180);
+            let alpha = Math.atan(value1 / value2) / radPi;
+            let beta = Math.atan(value2 / value1) / radPi;
             console.log(   "alpha = " + beta +"\n" + "beta = " + alpha);
             console.log("success");
             return;
@@ -70,8 +71,8 @@ function triangle(value1, type1, value2, type2) {
         let A = Math.sqrt(Math.pow(C, 2) - Math.pow(B, 2));
         if (B + C > A && B + A > C && C + A > B) {
             console.log("a = " + B + "\n" + "b = " + A + "\n" + "c = " + C);
-            let alpha = Math.atan(A / B) / (Math.PI/180);
-            let beta = Math.atan(B / A) / (Math.PI/180);
+            let alpha = Math.atan(A / B) / radPi;
+            let beta = Math.atan(B / A) / radPi;
             console.log(   "alpha = " + beta +"\n" + "beta = " + alpha);
             console.log("success");
             return;
@@ -99,8 +100,8 @@ function triangle(value1, type1, value2, type2) {
             console.log("failed");
             return;
         }
-        let C = B / Math.cos(alpha * (Math.PI/180));
-        let A = B * Math.tan(alpha * (Math.PI/180));
+        let C = B / Math.cos(alpha * radPi);
+        let A = B * Math.tan(alpha * radPi);
         if (B + C > A && B + A > C && C + A > B) {
             console.log("a = " + B + "\n" + "b = " + A + "\n" + "c = " + C);
             let beta = 90 - alpha;
@@ -131,7 +132,7 @@ function triangle(value1, type1, value2, type2) {
             console.log("failed");
             return;
         }
-        let C = B / Math.sin(beta * (Math.PI/180));
+        let C = B / Math.sin(beta * radPi);
         let A = Math.sqrt(C * C - B * B);
         if (B + C > A && B + A > C && C + A > B) {
             console.log("a = " + B + "\n" + "b = " + A + "\n" + "c = " + C);
@@ -163,8 +164,8 @@ function triangle(value1, type1, value2, type2) {
             console.log("failed");
             return;
         }
-        let A = C * Math.sin(beta * (Math.PI/180));
-        let B = C * Math.cos(beta * (Math.PI/180));
+        let A = C * Math.sin(beta * (radPi));
+        let B = C * Math.cos(beta * (radPi));
         if (B + C > A && B + A > C && C + A > B) {
             console.log("a = " + B + "\n" + "b = " + A + "\n" + "c = " + C);
             let alpha = 90 - beta;
