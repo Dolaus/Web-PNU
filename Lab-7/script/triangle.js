@@ -132,10 +132,16 @@ function triangle(value1, type1, value2, type2) {
             console.log("failed");
             return;
         }
-        let C = B / Math.sin(beta * radPi);
-        let A = Math.sqrt(C * C - B * B);
-        if (B + C > A && B + A > C && C + A > B) {
-            console.log("a = " + B + "\n" + "b = " + A + "\n" + "c = " + C);
+        
+        let alpha = value1;
+        let a = value2;
+        beta = 90 - alpha;
+        let b = a / Math.tan(alpha * (Math.PI / 180));
+        let c = Math.sqrt(a * a + b * b);
+
+       
+        if (b + c > a && b + a > c && c + a > b) {
+            console.log("a = " + a + "\n" + "b = " + b + "\n" + "c = " + c);
             let alpha = 90 - beta;
             console.log(   "alpha = " + beta +"\n" + "beta = " + alpha);
             console.log("success");
