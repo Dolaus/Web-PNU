@@ -1,4 +1,4 @@
-(function(window){
+(function(){
   let names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim"];
 
   for (let i=0;i<names.length;i++) {
@@ -8,24 +8,17 @@
       SpeakHello.speak(names[i]);
     }
   }
-  console.log(window);
-  
-  // var myMap= new Map();
-  
-  
-  // for (const item of names) {
-  //     let unicid=0;
-  //     for (let index = 0; index < item.length; index++) {
-  //       unicid+=item.charCodeAt(index);
-  //     }
-  //     myMap.set(unicid,item);
-  // }
-  // console.log(myMap.size);
-  // console.log(names.length);  
+  console.log();
+ 
+})();
 
+
+(function(){
+  let names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim"];
+  console.log("Name ends 'l' or 'k'");
   for (const item of names) {
     if (item.toLowerCase().charAt(item.length-1)=='l'||
         item.toLowerCase().charAt(item.length-1)=='k') 
       SpeakGoodbye.speak(item);   
   }
-})(window);
+})();
