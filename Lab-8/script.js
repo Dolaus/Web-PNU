@@ -22,7 +22,7 @@
   // }
   // console.log(myMap.size);
   // console.log(names.length);  
-
+  console.log("Name ends 'l' or 'k'");
   for (const item of names) {
     if (item.toLowerCase().charAt(item.length-1)=='l'||
         item.toLowerCase().charAt(item.length-1)=='k') 
