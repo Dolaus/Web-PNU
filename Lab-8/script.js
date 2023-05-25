@@ -12,10 +12,14 @@
 
 (function(){
   let names = ["Bill", "John", "Jen", "Jason", "Paul", "Frank", "Steven", "Larry", "Paula", "Laura", "Jim"];
-  console.log("All names end 'l' or 'k'");
+  console.log("All names end 'l' or 'k' Goodbye");
   for (const item of names) {
     if (item.toLowerCase().charAt(item.length-1)=='l'||
-        item.toLowerCase().charAt(item.length-1)=='k') 
-      console.log(item);  
+        item.toLowerCase().charAt(item.length-1)=='k') {
+        SpeakGoodbye.speak(item);  
+      }
+      else{
+        SpeakHello.speak(item);  
+      }
   }
 })();
